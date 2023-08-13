@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Form Etiketleri</title>
+</head>
+
+<body>
+    <!-- action: form etiketleri nereye gönderilecek 
+             file: dosya seçme-->
+
+    <form action="" method="GET" id="form1">
+        <fieldset>
+
+
+            <label for="kadi">Kullanıcı Adı</label>
+            <input placeholder="Kullanıcı adını yazın" required id="kadi" type="text" autocomplete="off"><br>
+            <label for="sifre">Şifre</label>
+            <input required id="sifre" type="password"><br>
+            <label for="eposta">E-posta</label>
+            <input required id="eposta" type="email"><br>
+        </fieldset><br>
+        <label for="dosya">Dosya Seç</label>
+        <input id="dosya" type="file" name="dosya[]" multiple accept="image/*"><br>
+        <label>
+            <input required type="checkbox">Kuralları kabul ediyorum<br>
+            <input type="checkbox" checked>Kuralları kabul ediyorum 2
+        </label><br>
+
+        <label>
+            <input required type="radio" name="cinsiyet" value="erkek">Erkek
+        </label>
+        <label>
+            <input required type="radio" name="cinsiyet" value="kadin">Kadın
+        </label>
+        <input type="submit" value="submit"><br>
+        <input type="hidden" name="test" value="test">
+        <input type="reset" value="sıfırla">
+
+    </form>
+    <br><br>
+
+    <input type="color"><br>
+    <input type="date"><br>
+    <input type="datetime-local"><br>
+    <input type="month"><br>
+    <input type="week"><br>
+    <input type="number" min="5" max="15"><br>
+    <input type="range" min="0" max="20" step="5"><br>
+    <input type="search" autofocus><br>
+    <input type="tel"><br>
+    <input type="time"><br>
+
+    <input list="diller" form="form1">
+    <datalist id="diller">
+        <option value="HTML"></option>
+        <option value="CSS"></option>
+        <option value="JS"></option>
+
+    </datalist><br>
+
+    <select name="dil[]" multiple size="7">
+        <optgroup label="Front-End Dilleri">
+            <option value="css">CSS</option>
+            <option value="html">HTML</option>
+            <option value="js">JS</option>
+        </optgroup>
+        <optgroup label="Back-End Dilleri">
+            <option value="php">PHP</option>
+            <option value="js">JS</option>
+            <option value="python">Python</option>
+        </optgroup>
+
+
+    </select><br>
+
+    <textarea name="" id="" cols="30" rows="10"></textarea><br>
+    <button type="submit">Gönder</button>
+
+
+
+</body>
+
+</html>

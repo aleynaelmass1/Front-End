@@ -1,0 +1,87 @@
+button:focus{
+    background-color: lightblue;
+    color:wheat
+}
+
+/*input:focus{
+    color: red;
+    border-color: red;
+}*/
+
+a:focus{
+    background-color: aqua;
+}
+
+div:focus{
+    background-color: yellow;
+}
+
+/*li:focus{
+    background-color: aqua;
+}
+
+ul:focus-within{
+    background-color: blueviolet;
+}*/
+
+/*li:only-child{
+    background-color: yellow;
+}*/
+
+abbr[title]{
+    background-color: aqua;
+}
+
+abbr:not([title]){
+    background-color: blueviolet;
+}
+
+li:empty{
+    display: none;
+}
+
+/*input:invalid{
+    border-color: tomato;
+}
+
+input:valid{
+    border-color: rgb(43, 226, 83);
+}*/
+
+/*input:enabled{
+    background-color: yellow;
+}
+
+input:disabled{
+    background-color: red;
+}*/
+
+.link1:active{
+    background-color: blueviolet;
+}
+
+p:target{
+    background-color: yellow;
+}
+
+input:in-range{
+    background-color: gold;
+    color: black;
+}
+
+input:out-of-range{
+    background-color: brown;
+    color: white;
+}
+
+body{
+    background-color: lightblue;
+}
+
+html{
+    background-color: aqua;
+}
+
+:root{
+    background-color: teal;
+}

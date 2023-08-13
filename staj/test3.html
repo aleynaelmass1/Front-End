@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="test2.css">
+<title>Alıntılama, Link ve Resim Etiketleri</title>
+    </head>
+    <body>
+        <!-- <abbr> kısaltmalar için altına ne olduklarını yazar.
+        <q> ufak alıntılama için.
+        <blockquote> büyük alıntılar için.
+        <cite> eser isimleri yazarken tanımlamak için kullanılır. 
+        <a> etiketi link vermek için kullanılır. href niteliğiyle bağlantı verilir.
+        <a> etiketinde target niteliği linkin nasıl açılacağını belirler.(_self doğrudan açar, _blank yeni sekmede açar.)
+        title niteliği linke gelince altta ne olduğunu gösteriyor.
+        download niteliği linkteki resmin vs. indirilmesini sağlıyor. Localde çalışınca yapmıyor.
+        <img> resim etiketi, kapatılmaya ihtiyacı yok.
+        src niteliği resmin dosya yolu, alt resim yüklenmezse resmi açıklayan yazı, 
+        height yükseklik, width genişlik, title başlık.
+
+
+        -->
+<p>
+    Web standartlarını <abbr title="World Wide Web Consortium">W3C</abbr> belirler.
+</p>
+<p>
+    Küçük alıntı;
+    <q>Küçük alıntı</q>
+</p>
+<blockquote>Büyük alıntı</blockquote>
+<p>
+    J.K.Rowling tarafından yazılan <cite>Harry Potter</cite> filminin ilk gösterimi 2002'de gerçekleşti.
+</p>
+<a rel="nofollow" href="https://www.google.com">buraya tıklayın</a>
+<!-- nofollow, kaynağı bilinmeyen sayfalar için. -->
+<p>
+    <a href="https://www.google.com" target="_blank" title="Google"><b>Buraya</b></a> tıklayıp Google'a gidebilirsiniz.
+</p>
+<p>
+    <a href="test.png" download>Resmi indirmek için tıklayın.</a>
+</p>
+<p>
+    <a href="#ders1">HTML Dersleri 1</a>
+    <!-- #ders1 id'si verilerek HTML Dersleri 1'e tıklandığında aşağıdaki ders1 div'ine gidecek. -->
+    <a href="#ders2">HTML Dersleri 2</a>
+    <a href="#ders3">HTML Dersleri 3</a>
+    <a href="#ders4">HTML Dersleri 4</a>
+    <a href="#ders5">HTML Dersleri 5</a>
+</p>
+<div id="ders1">
+    test yazı <br>
+    test yazı <br>
+    test yazı <br>
+</div>
+<div id="ders2">
+    test yazı <br>
+    test yazı <br>
+    test yazı <br>
+</div>
+<div id="ders3">
+    test yazı <br>
+    test yazı <br>
+    test yazı <br>
+</div>
+<div id="ders4">
+    test yazı <br>
+    test yazı <br>
+    test yazı <br>
+</div>
+<div id="ders5">
+    test yazı <br>
+    test yazı <br>
+    test yazı <br>
+</div>
+<a href="https://www.google.com.tr"><img src="test.png" alt="Resmi açıklayan ifade" width="500" height="200" title="Resim"></a>
+<img src="test.png" alt="Resmi açıklayan ifade" width="500" height="200" title="Resim">
+    </body>
+</html>

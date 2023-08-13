@@ -1,0 +1,245 @@
+/*span {
+    background-color: aquamarine;
+}*/
+
+/*html, body{
+    height: 100%;
+    width: 100%;
+}*/
+
+/*div{
+    width: 50%;
+    height: 50%;
+    background-color: aquamarine;
+}*/
+
+/*div{
+    max-width: 1000px;
+    min-width: 600px;
+    background-color: crimson;
+    height: 400px;
+}*/
+
+/*div{
+    background-color: aqua;
+    width: min-content;
+}*/
+
+/*.box1 {
+    background-color: darkred;
+    width: min-content;
+}
+
+.box2 {
+    background-color: aquamarine;
+    writing-mode: vertical-lr;
+    height: min-content;
+}*/
+
+/*span{
+    background-color: tomato;
+    padding: 50px;
+}
+
+div {
+    background-color: greenyellow;
+    width: 200px;
+    height: 200px;
+    padding: 50px 100px 30px 20px;
+
+    background-color: lawngreen;
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 15px;
+}*/
+
+/*div {
+    background-color: lightsalmon;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+    /*margin: 50px 100px 70px 200px;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}*/
+
+/*div{
+    width: 250px;
+    height: 250px;
+    background-color: blueviolet;
+    border-style: solid dashed;
+    border-bottom-style: dashed;
+    border-top-style: dotted;
+    border-right-style: double;
+    border-left-style: groove;
+    border-width: thick;
+}*/
+
+/*.box1 {
+
+}
+
+.box2{
+
+}*/
+
+/*div{
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
+    margin: 50px auto;
+    border: 5px solid tomato;
+    outline-style: dashed;
+}*/
+
+/*div{
+    width: 200px;
+    height: 200px;
+    background-color: turquoise;
+    padding: 15px;
+    border: 10px solid wheat;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    border: 10px double black;
+    border-radius: 300px;
+    text-align: center;
+}*/
+
+/*h
+f1 {
+    color: red;
+}
+
+body{
+    color:Red;
+}*/
+
+/*body{
+    font-family: 'Times New Roman';
+}*/
+
+/*div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+div span {
+    font-size: 2rem;
+    font-variant: small-caps;
+}*/
+
+h3 {
+    font-style: oblique;
+    font-weight: 100;
+}
+
+p {
+    line-height: 1.15;
+    /*font: italic bold small-caps 30px/1.7 Arial, sans-serif;*/
+    word-spacing: 10px;
+    text-align-last: center;
+    text-indent: -15px;
+    white-space: pre-line;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 5px 5px 0 red;
+    /*text-decoration-line: underline overline;
+    text-decoration-color: brown;
+    text-decoration-style:double ;
+    text-decoration: underline overline brown wavy;*/
+}
+
+/*html {
+    height: 100%;
+}
+
+body {
+    background-image: url(images.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}*/
+
+/*.box{
+    /*padding: 30px;
+    border: 10px dashed black;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-image: url(images.jpg);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    border: 10px dashed black;
+    padding: 40px;
+    width: 200px;
+    height: 200px;
+    background-image: url(images.jpg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+
+    width: 500px;
+    h
+    eight: 200px;
+    padding: 40px;
+    border: 10px dashed black;
+    background-image: url(images.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+    background-size: cover;
+    background-attachment: fixed;
+
+    background: padding-box center/cover green url(images.jpg) no-repeat content-box;
+
+    background-image: linear-gradient(to top, orange, red);
+
+}*/
+
+/*ul, ol {
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+
+}
+
+ul.sayac{
+    counter-reset: sayac1 1;
+}
+
+ul.sayac li{
+    counter-increment: sayac1 2;
+}
+
+ul.sayac li::before{
+    content: counter(sayac1) ")";
+}*/
+
+body{
+    
+}
+
+div{
+    width: 100%;
+    display: -ms-inline-grid;
+}

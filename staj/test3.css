@@ -1,0 +1,43 @@
+a:hover{
+    background-color: chocolate;
+}
+
+div:hover{
+    background-color: white;
+}
+
+div span:hover{
+    background-color: plum;
+}
+
+button:hover + ul{
+    display: none;
+}
+
+.url::after{
+    content: ' (' attr(href) ')';
+}
+
+.url:hover::after{
+    display: none;
+}
+
+input[type="radio"]:checked + span{
+    color: red;
+}
+
+.checkbox:checked + .box{
+    display: none;
+}
+
+.button::before{
+    content: attr(data-hide);
+}
+
+.checkbox:checked + .button::before{
+    content: attr(data-show);
+}
+
+.checkbox:checked + .button + .box{
+    display: none;
+}
