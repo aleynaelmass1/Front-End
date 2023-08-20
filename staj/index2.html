@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1 style="color: red; background-color: yellow" class="test" id="deneme">prototurk</h1>
+    <ul class="list">
+        <li>Liste 1</li>
+        <li>Liste 2</li>
+        <li>Liste 3</li>
+        <li>Liste 4</li>
+    </ul>
+    <article>
+        <h1>başlık</h1>
+        <p>paragraf</p>
+        <footer>alt bilgi</footer>
+    </article>
+    <div class="test" style="padding: 20px; border: 20px solid red">
+        <div>eleman 1</div>
+        <div style="padding: 10px">eleman 2</div>
+        <div>eleman 3</div>
+      </div>
+    <script>
+        const h1 = document.getelementById('deneme')
+        const attributes = h1.attributes
+
+        for (const attr of attributes) {
+            console.log(attr.name, attr.value)
+        }
+        console.log(
+            document.querySelector('.list').childElementCount
+        )
+        const article = document.getElementsByTagName('article')[0]
+for (const child of article.children) {
+  console.log(child, child.tagName);
+}
+console.log(
+    document.querySelector('.test').clientHeight
+)
+
+console.log(
+    document.querySelector('.test').clientWidth
+)
+const ul = document.querySelector('ul')
+
+console.log(
+    ul.firstElementChild
+)
+
+console.log(
+    ul.lastElementChild
+)
+console.log(
+    document.querySelector('.title').nextElementSibling
+)
+  
+console.log(
+    document.querySelector('.title').previousElementSibling
+)
+    </script>
+</body>
+
+</html>
