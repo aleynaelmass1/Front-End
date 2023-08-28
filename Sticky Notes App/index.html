@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="notes">
+            <div id="create">
+                <i class="fa-solid fa-plus"></i>
+                <div class="createBox">
+                    <div class="innerCreateBox">
+                        <textarea placeholder="Write here" id="userInput" maxlength="160"></textarea>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        let createBox=document.getElementsByClassName('createBox')
+        [0];
+        let notes=document.getElementsByClassName('notes')[0];
+        let input=document.getElementById('userInput')
+        let i=0;
+
+        createBox.addEventListener('keydown', content)
+
+        document.getElementById("create").addEventListener("click", function(){
+            createBox.style.display="block";
+        });
+
+        function content(e){
+            if(e.keyCode == '13'){
+                divStyle(input.value);
+                input.value="";
+                createBox.style.display="none";
+            }
+        }
+
+        function color(){
+            let randomColors = ["#c2ff3d", "#ff3de8", "#3dc2ff", "#04e022", "#bc83e6", "#ebb328"];
+            if (i>randomColors.length-1){
+                i=0;
+            }
+            return randomColors[i++]
+        }
+
+        function divStyle(text){
+            let div=document.createElement("div")
+            div.className='note';
+            div.innerHTML = '<div class="details">'+'<h3>'+text+'<h3>'+'</div>';
+
+                //remove note on double click
+                div.addEventListener("dblclick", function(){
+                    div.remove();
+                })
+
+            notes.appendChild(div);
+
+            //fill random colors in notes
+            div.setAttribute('style', 'background:'+color()+'');
+
+        }
+
+    </script>
+</body>
+
+
+</html>
